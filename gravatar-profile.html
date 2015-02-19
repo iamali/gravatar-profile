@@ -1,0 +1,42 @@
+<link href="../bower_components/polymer/polymer.html" rel="import">
+<link href="../bower_components/core-shared-lib/core-shared-lib.html" rel="import">
+
+<polymer-element name="gravatar-profile" attributes="email width round position">
+
+    <template>
+        <link href="gravatar-profile.css" rel="stylesheet">
+        <core-shared-lib on-core-shared-lib-load="{{ getInfo }}" url="https://www.gravatar.com/{{ gid }}.json?callback=%%callback%%">
+        <div class="{{ position }}">
+            <img src="http://www.gravatar.com/avatar/{{ gid }}?s={{ width }}&d=mm" alt="{{ email }}" class="{{ class }}" />
+            <p><strong>{{ userName }}</strong><small>{{ userLocation }}</small></p>
+        </div>
+        <content></content>
+    </template>
+
+    <script src="md5.js"></script>
+
+    <script>
+    
+        Polymer('gravatar-profile', {
+
+            publish: {
+                width: '80',
+                round: false,
+                position: 'vertical'
+            },
+
+            ready: function() {
+                this.gid = md5(this.email);
+                this.class = (this.round === true) ? 'round' : ''; 
+            },
+
+            getInfo: function(e) {
+                var userdetails = e.detail[1][0].entry[0];
+                this.userName = userdetails.displayName;
+                this.userLocation = userdetails.currentLocation;
+            }
+
+        });
+    </script>
+
+</polymer-element>
