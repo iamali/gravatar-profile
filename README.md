@@ -3,6 +3,11 @@
 
 ##Destructions
 
+Install Bower components
+```
+bower install
+```
+
 Import polyfill
 ```
 <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
