@@ -25,9 +25,9 @@ Use element
 
 ##Attributes
 
-| Attribute  | Description | Example  | Default  |
+| Attribute  | Description | Options | Example  | Default  |
 |---|---|---|---|
-| email  | Email of gravatar you want | ```<gravatar-profile email="name@domain.com"></gravatar-profile>``` | - |
-| width | Width of gravatar image | ```<gravatar-profile width="130"></gravatar-profile>``` | 80 |
-| round | Make the gravatar image round | ```<gravatar-profile round></gravatar-profile>``` | false |
-| position | Position of the user info | ```<gravatar-profile position="horizontal"></gravatar-profile>``` | vertical |
+| email  | Email of gravatar you want | - | ```<gravatar-profile email="name@domain.com"></gravatar-profile>``` | - |
+| width | Width of gravatar image | - | ```<gravatar-profile width="130"></gravatar-profile>``` | 80 |
+| round | Make the gravatar image round | - | ```<gravatar-profile round></gravatar-profile>``` | false |
+| position | Position of the user info | 'horizontal' or 'vertical' | ```<gravatar-profile position="horizontal"></gravatar-profile>``` | vertical |
