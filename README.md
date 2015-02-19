@@ -10,7 +10,7 @@ Import polyfill
 
 Import element
 ```
-<link rel="import" href="components/gravatar-profile/gravatar-profile.html">
+<link rel="import" href="gravatar-profile/gravatar-profile.html">
 ```
 
 Use element
