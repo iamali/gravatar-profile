@@ -1,25 +1,19 @@
 {
-  "name": "gravatar-profile",
-  "version": "0.0.1",
-  "homepage": "https://github.com/iamali/gravatar-profile",
-  "description": "Gravatar profile",
-  "main": "gravatar-profiles.html",
-  "keywords": [
-    "web-components", 
-    "gravatar", 
-    "web", 
-    "components",
-    "custom", 
-    "elements"
-  ],
+  "name": "Gravatar Profile",
+  "version": "0.1.0",
   "authors": [
-    "Ali Green"
+    "Ali Green <alisonegreen@gmail.com>"
   ],
   "license": "MIT",
   "ignore": [
-    "README.md"
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#~0.3.4"
+    "polymer": "Polymer/polymer#~0.5.4",
+    "core-shared-lib": "Polymer/core-shared-lib#~0.5.5"
   }
 }
