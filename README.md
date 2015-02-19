@@ -1,41 +1,41 @@
-&lt;share-button&gt;
+&lt;gravatar-profile&gt;
 ============
 
 ##Destructions
 
 Import polyfill
 ```
-<script src="components/platform/platform.js"></script>
+<script src="bower_components/webcomponentsjs/webcomponents.js"></script>
 ```
 
 Import element
 ```
-<link rel="import" href="components/share-button/share-button.html">
+<link rel="import" href="components/gravatar-profile/gravatar-profile.html">
 ```
 
 Use element
 ```
-<share-button></share-button>
+<gravatar-profile></gravatar-profile>
 ```
 
 ##Attributes
 
-Height of the button
+Email
 ```
-<share-button height="50"></share-button>
+gravatar-profile email="name@domain.com"></gravatar-profile>
 ```
 
-Width of the button
+Width of the image
 ```
-<share-button height="50" width="50"></share-button>
+gravatar-profile email="name@domain.com" width="100"></gravatar-profile>
 ``` 
 
-Platform to share on
+Make the image round
 ```
-<share-button height="400" width="600" platform="twitter"></share-button>
+gravatar-profile email="name@domain.com" width="100" round></gravatar-profile>
 ```  
 
-URL to share
+Position of the user info (horizontal or vertical (default))
 ```
-<share-button height="400" width="600" platform="twitter" url="http://www.greatfridays.com">This is a caption</share-button>
+gravatar-profile email="name@domain.com" width="100" position="horizontal" round></gravatar-profile>
 ```  
