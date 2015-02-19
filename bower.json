@@ -1,6 +1,16 @@
 {
   "name": "Gravatar Profile",
   "version": "0.1.0",
+  "homepage": "https://github.com/iamali/gravatar-profile",
+  "description": "Grab a gravatar",
+  "keywords": [
+    "web-components", 
+    "gravatar", 
+    "web", 
+    "components",
+    "custom", 
+    "elements"
+  ],
   "authors": [
     "Ali Green <alisonegreen@gmail.com>"
   ],
@@ -8,9 +18,7 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "bower_components"
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#~0.5.4",
