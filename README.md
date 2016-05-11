@@ -1,7 +1,8 @@
 &lt;gravatar-profile&gt;
-============
+===
 
-##Destructions
+Destructions
+---------------
 
 Install Bower components
 ```
@@ -23,7 +24,8 @@ Use element
 <gravatar-profile></gravatar-profile>
 ```
 
-##Attributes
+Attributes
+---------------
 
 | Attribute  | Description | Options | Example  | Default  |
 |---|---|---|---|---|
