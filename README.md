@@ -1,5 +1,6 @@
 &lt;gravatar-profile&gt;
 ===
+A Gravatar profile element using Polymer
 
 Destructions
 ---------------
